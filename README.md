@@ -1,7 +1,7 @@
 What I changed and worked on for this homework assignment.
 
 Brief:
-I went through and found various div tags that could be cleaned up and organized. I combed through the html file to ensure that everything was ordered neatly and made sense and made changes to elements that were disorganized or unnecessary. I also made the overall html file more accessible by including aria-label on lines of code that needed more clarity. This was in an effort to make the website WCAG compliant. 
+I went through and found various div tags that could be cleaned up and organized. I combed through the html file to ensure that everything was ordered neatly and made sense and made changes to elements that were disorganized or unnecessary. I also made the overall html file more accessible by including aria-label on lines of code that needed more clarity as well as alternative attributes for images that wer just decorative. This was in an effort to make the website WCAG compliant. 
 
 Here are all the changes that I made: 
   Line 12:HMTL Semantics fix. Replaced <div id="header"> with <Header></Header>
@@ -18,7 +18,9 @@ Here are all the changes that I made:
   Line 78-98: Semantic fix: Instead of div replaced with aside tag. Added aria-label for icon image.
   Line 108: Semantic fix: Instead of div replaced with footer tag. Added aria-label to define the heart shaped emoji.
   
-  I also ensured that any elements that I changed in the html file was reflected in the css file to make sure the style of the   website was not impacted. 
+  I also ensured that any elements that I changed in the html file was reflected in the css file to make sure the style of the   website was not impacted. This was mainly for any classes that were unecessary since those elements already had an ID that could be pointed to. 
+
+  Finally I changed the order of the css to match the elements order of the html. 
   
   Research that I used and implemented for this assignment:
   https://www.w3.org/WAI/WCAG21/quickref/
