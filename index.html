@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
+    <title aria-label="Horizon Social Media Solution Website">Horiseon Social Media Solution Website</title>
+</head>
+
+<body>
+    <!-- HMTL Semantics fix. Replaced <div id="header"> with <Header></Header> -->
+    <Header>
+        
+        <!-- Added aria-label so that the company's name is given meaning to someone who is unable to see -->
+        <h1 aria-label="This company's name is pronounced horizon but is spelled H O R I S E O N. The S E O is emphasized to reflect that this company is based around Search Engine Optimation or S E O for short">Hori<span class="seo">seo</span>n</h1>
+      
+        <!-- HTML Semantics fix. Replaced <div></div> with <nav></nav>  -->
+        <nav>
+            <ul>
+                <li>
+                    
+                    <!-- Added aria-label to define link. -->
+                    <a aria-label="Link to Search Engine Optimization description" href="#search-engine-optimization">Search Engine Optimization</a>
+                </li>
+                <li>
+                    
+                    <!-- Added aria-label to define link. -->
+                    <a aria-label="Link to online reputation management description" href="#online-reputation-management">Online Reputation Management</a>
+                </li>
+                <li>
+                   
+                    <!-- Added aria-label to define link. -->
+                    <a aria-label="Link to social media marketing description" href="#social-media-marketing">Social Media Marketing</a>
+                </li>
+            </ul>
+        </nav>
+    </Header>
+
+    <!--    Semantic fix: Instead of div replaced with img -->
+    <img aria-label="Image of a team working on project" src="./assets/images/digital-marketing-meeting.jpg" class="hero"></div>
+
+<!-- semantic fix: Instead of div replaced with section. Section informns this whole next part as one grouping -->
+    <section class="content">
+
+<!-- Fixed bug where id for search engine optimization wasn't defined so link above couldn't
+go to content. Semantic fix: Instead of div replaced with article. -->
+        <article id="search-engine-optimization" class="search-engine-optimization">
+            <img aria-label="Image of a project area with computer, notebook, and writing utencils" src="./assets/images/search-engine-optimization.jpg" class="float-left" />
+            <h2>Search Engine Optimization</h2>
+            <p>
+                The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
+            </p>
+        </article>
+
+        <!-- Semantic fix: Instead of div replaced with article. Added aria-label to define link. -->
+        <article id="online-reputation-management" class="online-reputation-management">
+            <img aria-label="Image of a person working on computer" src="./assets/images/online-reputation-management.jpg" class="float-right" />
+            <h3>Online Reputation Management</h3>
+            <p>
+                The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
+            </p>
+        </article>
+
+        <!-- Semantic fix: Instead of div replaced with article tag. Added aria-label to define link. -->
+        <article id="social-media-marketing" class="social-media-marketing">
+            <img aria-label="Image of a team working at a table with various social media icons on the table" src="./assets/images/social-media-marketing.jpg" class="float-left" />
+            <h4>Social Media Marketing</h4>
+            <p>
+                Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
+            </p>
+        </article>
+    </section> 
+
+    <!-- Semantic fix: Instead of div replaced with aside tag -->
+    <aside class="benefits">
+
+        <!-- Semantic fix: Instead of div replaced with aside tag. Added aria-label for icon image. -->
+        <aside class="benefit-lead">
+            <h2>Lead Generation</h2>
+            <img aria-label="Icon that represents lead generation." src="./assets/images/lead-generation.png" />
+            <p>
+                Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
+            </p>
+        </aside>
+
+            <!-- Semantic fix: Instead of div replaced with aside tag. Added aria-label for icon image. -->
+        <aside class="benefit-brand">
+            <h3>Brand Awareness</h3>
+            <img aria-label="Icon that represents brand awareness." src="./assets/images/brand-awareness.png" />
+            <p>
+                Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
+            </p>
+        </aside>
+
+            <!-- Semantic fix: Instead of div replaced with aside tag. Added aria-label for icon image. -->
+        <aside class="benefit-cost">
+            <h4>Cost Management</h4>
+            <img aria-label="Icon that represents cost management" src="./assets/images/cost-management.png"></img>
+            <p>
+                As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page.
+            </p>
+        </aside>
+
+    </aside>
+
+    <!--Semantic fix: Instead of div replaced with footer tag. Added aria-label to define the heart shaped emoji.  -->
+    <footer>
+        <h2 aria-label="Made with love by Horizon">Made with ❤️️ by Horiseon</h2>
+        <p>
+            &copy; 2019 Horiseon Social Solution Services, Inc.
+        </p>
+    </footer>
+</body>
+
+</html>
